@@ -1,0 +1,41 @@
+
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<img src="{% static 'images/itech_logo.png' %}" width="400" height="400" alt="My image">
+<h1 class="text-4xl font-bold mb-6 text-center">Welcome to the Home Page</h1>
+<p class="mb-8 text-center">This is the home page of our site. Here, you'll find the latest updates and featured articles.</p>
+
+<section class="mb-12">
+    <h2 class="text-3xl font-semibold mb-4">Latest News</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+            <h3 class="text-xl font-bold mb-2">News Item 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a lectus nec urna gravida bibendum.</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+            <h3 class="text-xl font-bold mb-2">News Item 2</h3>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce nec facilisis sem.</p>
+        </article>
+    </div>
+</section>
+
+<section>
+    <h2 class="text-3xl font-semibold mb-4">Featured Articles</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+            <h3 class="text-xl font-bold mb-2">Article 1</h3>
+            <p>Suspendisse potenti. Maecenas a lectus at orci auctor aliquam. Integer quis orci eros.</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+            <h3 class="text-xl font-bold mb-2">Article 2</h3>
+            <p>Aliquam erat volutpat. Nullam vel risus non elit vehicula facilisis sit amet ac nulla.</p>
+        </article>
+    </div>
+</section>
+{% endblock %}

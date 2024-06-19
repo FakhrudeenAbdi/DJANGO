@@ -1,0 +1,50 @@
+
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl font-bold mb-4">Contact Us</h1>
+<p class="mb-6">We'd love to hear from you. Please reach out to us using the information below.</p>
+
+<section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Contact Information</h2>
+    <div class="mb-4">
+        <p><strong>Address:</strong> moi Avenue, Nairobi, Kenya</p>
+        <p><strong>Phone:</strong> 0712554431</p>
+        <p><strong>Email:</strong> contact@ourcompany.com</p>
+    </div>
+</section>
+
+<section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Contact Form</h2>
+    <form action="/contact/" method="post" class="max-w-lg">
+        {% csrf_token %}
+        <div class="mb-4">
+            <label for="name" class="block mb-1">Name:</label>
+            <input type="text" id="name" name="name" required class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-400">
+        </div>
+        
+        <div class="mb-4">
+            <label for="email" class="block mb-1">Email:</label>
+            <input type="email" id="email" name="email" required class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-400">
+        </div>
+        
+        <div class="mb-6">
+            <label for="message" class="block mb-1">Message:</label>
+            <textarea id="message" name="message" required class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-400"></textarea>
+        </div>
+        
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Send</button>
+    </form>
+</section>
+
+<section>
+    <h2 class="text-2xl font-bold mb-2">Find Us</h2>
+    <p class="mb-4">Our office is located at the heart of the city, easily accessible by public transport.</p>
+    <div id="map" class="mb-8">
+        <!-- Embed a Google Map here -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2155149136676!2d-122.4215162846817!3d37.77492977975947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c5e1b0f5%3A0x2c0b61f648b2b9a9!2s123%20Main%20St%2C%20San%20Francisco%2C%20CA%2094110%2C%20USA!5e0!3m2!1sen!2s!4v1622726747269!5m2!1sen!2s" width="600" height="450" class="w-full h-64 rounded-lg" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+{% endblock %}

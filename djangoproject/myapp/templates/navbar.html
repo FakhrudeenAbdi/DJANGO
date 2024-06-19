@@ -1,0 +1,23 @@
+<!-- <nav>
+  <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+  </ul>
+</nav> -->
+<nav class="bg-blue-500 py-4">
+  <ul class="flex justify-center space-x-6">
+      <li>
+          <a href="{% url 'home' %}" class="text-white hover:text-gray-200">Home</a>
+      </li>
+      <li>
+          <a href="{% url 'about' %}" class="text-white hover:text-gray-200">About</a>
+      </li>
+      <li>
+          <a href="{% url 'contact' %}" class="text-white hover:text-gray-200">Contact</a>
+      </li>
+      <li>
+        <a href="{% url 'index' %}" class="text-white hover:text-gray-200">index</a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl font-bold mb-4">About Us</h1>
+<p class="mb-6">We are a company dedicated to providing the best services in the industry. Our mission is to innovate and lead.</p>
+
+<section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Our History</h2>
+    <p class="mb-4">Founded in 2020, our company has rapidly grown to become a leader in the market. Our commitment to quality and customer satisfaction has been the cornerstone of our success.</p>
+</section>
+
+<section class="mb-8">
+    <h2 class="text-2xl font-bold mb-2">Our Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <article class="bg-white p-4 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-2">John Mathhews - CEO</h3>
+            <p>John has over 20 years of experience in the industry and is the visionary behind our company.</p>
+        </article>
+        <article class="bg-white p-4 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-2">Jane Mwangi - CTO</h3>
+            <p>Jane leads our tech team with innovative solutions and cutting-edge technology.</p>
+        </article>
+    </div>
+</section>
+
+<section>
+    <h2 class="text-2xl font-bold mb-2">Our Values</h2>
+    <ul class="list-disc ml-6">
+        <li class="mb-2">Integrity</li>
+        <li class="mb-2">Innovation</li>
+        <li class="mb-2">Customer Satisfaction</li>
+        <li class="mb-2">Quality</li>
+    </ul>
+</section>
+{% endblock %}
